@@ -1,4 +1,4 @@
-est:
+test:
 	go test -v ./...
 
 benchmark:
