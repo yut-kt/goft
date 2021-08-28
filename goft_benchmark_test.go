@@ -12,7 +12,9 @@ func BenchmarkDft(b *testing.B) {
 	for i := 0; i < N; i++ {
 		v[i] = math.Sin(float64(i) * circle)
 	}
-	DFT(v)
+	if _, err := DFT(v); err != nil {
+		b.Error(err)
+	}
 }
 
 func BenchmarkFFT(b *testing.B) {
@@ -22,5 +24,7 @@ func BenchmarkFFT(b *testing.B) {
 	for i := 0; i < N; i++ {
 		v[i] = math.Sin(float64(i) * circle)
 	}
-	FFT(v)
+	if _, err := FFT(v); err != nil {
+		b.Error(err)
+	}
 }
