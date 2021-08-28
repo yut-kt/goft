@@ -1,0 +1,14 @@
+github.com/yut-kt/goft/dft.go:9:	DFT			87.5%
+github.com/yut-kt/goft/dft.go:23:	dftMapping		100.0%
+github.com/yut-kt/goft/dft.go:38:	Amplitude		100.0%
+github.com/yut-kt/goft/dft.go:47:	IDFT			87.5%
+github.com/yut-kt/goft/dft.go:61:	idftMapping		100.0%
+github.com/yut-kt/goft/fft.go:17:	FFT			71.4%
+github.com/yut-kt/goft/fft.go:32:	IFFT			80.0%
+github.com/yut-kt/goft/fft.go:50:	recursive		100.0%
+github.com/yut-kt/goft/fft.go:76:	calcFFT			100.0%
+github.com/yut-kt/goft/fft.go:85:	calcIFFT		100.0%
+github.com/yut-kt/goft/math.go:9:	multiMatrix		0.0%
+github.com/yut-kt/goft/math.go:36:	multiEveryRowColumn	0.0%
+github.com/yut-kt/goft/parse.go:8:	interfaceToComplexSlice	77.8%
+total:					(statements)		75.2%
