@@ -1,0 +1,16 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/yut-kt/goft
+cpu: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+BenchmarkDft-12    	1000000000	         0.02256 ns/op	       0 B/op	       0 allocs/op
+BenchmarkDft-12    	1000000000	         0.02262 ns/op	       0 B/op	       0 allocs/op
+BenchmarkDft-12    	1000000000	         0.02264 ns/op	       0 B/op	       0 allocs/op
+BenchmarkDft-12    	1000000000	         0.02291 ns/op	       0 B/op	       0 allocs/op
+BenchmarkDft-12    	1000000000	         0.02266 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFFT-12    	1000000000	         0.0004117 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFFT-12    	1000000000	         0.0004171 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFFT-12    	1000000000	         0.0004175 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFFT-12    	1000000000	         0.0004192 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFFT-12    	1000000000	         0.0004289 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/yut-kt/goft	1.067s
