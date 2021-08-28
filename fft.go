@@ -13,6 +13,7 @@ const (
 	CaseIFFT
 )
 
+// FFT is a function to Fast Fourier Transformation.
 func FFT(f interface{}) ([]complex128, error) {
 	c, err := interfaceToComplexSlice(f)
 	if err != nil {
@@ -27,6 +28,7 @@ func FFT(f interface{}) ([]complex128, error) {
 	return c, err
 }
 
+// IFFT is a function to Inverse Fast Fourier Transform.
 func IFFT(F interface{}) ([]complex128, error) {
 	c, err := interfaceToComplexSlice(F)
 	if err != nil {

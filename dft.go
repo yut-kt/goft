@@ -5,6 +5,7 @@ import (
 	"math/cmplx"
 )
 
+// DFT is a function to Discrete Fourier Transform.
 func DFT(f interface{}) ([]complex128, error) {
 	c, err := interfaceToComplexSlice(f)
 	if err != nil {
@@ -33,6 +34,7 @@ func dftMapping(f []complex128, t float64) complex128 {
 	return complex(sumReal, sumImag)
 }
 
+// Amplitude is a function mainly to calc calculate the amplitude of the FFT result.
 func Amplitude(c []complex128) []float64 {
 	amp := make([]float64, len(c))
 	for i := 0; i < len(c); i++ {
@@ -41,6 +43,7 @@ func Amplitude(c []complex128) []float64 {
 	return amp
 }
 
+// IDFT is a function to Inverse Discrete Fourier Transform.
 func IDFT(F interface{}) ([]complex128, error) {
 	c, err := interfaceToComplexSlice(F)
 	if err != nil {
